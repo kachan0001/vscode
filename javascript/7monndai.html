@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7章連絡帳</title>
+</head>
+<body>
+    <script>
+        //連絡帳を作る
+//ユーザーに名前と電話番号を入力する。yamamori
+//その値をuserオブジェクトに格納します。
+//そして、コンソールログにuserオブジェクトの中身を出力。
+//完成
+//（ユーザーから入力してもらうには、5章で学習したpromptメソッドを使います）
+    //変数を宣言する
+    const user_name = prompt('名前を入力してください'); //userのnameプロパティを入力する
+    const user_callnumbar = prompt('電話番号を入力してください');//userのcallnumbarプロパティを入力
+     const user = {}; //userオブジェクトをつくる
+
+    
+    user.name = user_name ;//入力したnameプロパティをuserオブジェクトに格納する
+    
+    user.callnumbar = user_callnumbar;//入力したcallnumbarプロパティをuserオブジェクトに格納する
+
+    console.log(user);//コンソールに出力する
+
+    </script>
+</body>
+</html>

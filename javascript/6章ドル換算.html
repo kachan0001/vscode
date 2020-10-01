@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドル換算</title>
+    <script>
+        //関数化
+        function fncDOLLAR() {
+            //変数
+            var en;
+            var dollar;
+            //ボックス変数
+            dollar = eval(document.en.money.value);
+
+            en = dollar * 108;
+
+            document.en.enAns.value = en;
+        }
+    </script>
+</head>
+<body>
+    <h2>ドル換算</h2>
+    <form name="en">
+        ドル : <input type="text" name="money">
+        <input type="button" value="円換算" onclick="fncDOLLAR()">
+        <h3>計算結果</h3>
+        円 : <input type="text" name="enAns">
+    </form>
+</body>
+</html>

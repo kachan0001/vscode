@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>falseになる条件</title>
+</head>
+<body>
+     <script>
+      console.log('' ? true : false); // false 空文字
+      console.log(0 ? true: false);  // false 数値の0
+      console.log(NaN ? true: false); // false NaN（数値ではない不定の値）
+      console.log(null ? true : false); // false null（中身が空っぽの状態）
+      console.log(undefined ? true : false); // false undefined（何も定義されていない状態）
+  </script>
+</body>
+</html>
